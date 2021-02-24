@@ -12,4 +12,13 @@ urlpatterns = [
     path('movies',
          views.MovieList.as_view(),
          name='MovieList'),
+
+    path('person/<int:pk>',
+         views.PersonDetail.as_view(),
+         name='PersonDetail'),
+
+    path('persons',
+         views.PersonList.as_view(),
+         name='PersonList'),
+
     ]
